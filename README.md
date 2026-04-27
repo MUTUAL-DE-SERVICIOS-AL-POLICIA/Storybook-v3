@@ -13,28 +13,23 @@ This is a template for creating applications using Next.js 15 (app directory) an
 - [TypeScript](https://www.typescriptlang.org/)
 - [next-themes](https://github.com/pacocoursey/next-themes)
 
-## How to Use
 
-### Use the template with create-next-app
-
-To create a new project based on this template using `create-next-app`, run the following command:
+## Clonar el repositorio y agregarle un nombre nuevo del nuevo proyecto
 
 ```bash
-npx create-next-app -e https://github.com/heroui-inc/next-app-template
+git clone https://github.com/MUTUAL-DE-SERVICIOS-AL-POLICIA/template-interface-v3.git Nombre-Interface
 ```
 
 ### Install dependencies
 
-You can use one of them `npm`, `yarn`, `pnpm`, `bun`, Example using `npm`:
-
 ```bash
-npm install
+pnpm install
 ```
 
 ### Run the development server
 
 ```bash
-npm run dev
+pnpm dev
 ```
 
 ## License
