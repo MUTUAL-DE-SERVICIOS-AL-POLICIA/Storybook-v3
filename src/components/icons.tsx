@@ -987,7 +987,12 @@ export const EditIcon = (props: IconSvgProps) => {
   );
 };
 
-export const PlusIcon = ({size = 24, width, height, ...props}: IconSvgProps) => {
+export const PlusIcon = ({
+  size = 24,
+  width,
+  height,
+  ...props
+}: IconSvgProps) => {
   return (
     <svg
       aria-hidden="true"
@@ -1013,7 +1018,10 @@ export const PlusIcon = ({size = 24, width, height, ...props}: IconSvgProps) => 
   );
 };
 
-export const ChevronDownIcon = ({strokeWidth = 1.5, ...otherProps}: IconSvgProps) => {
+export const ChevronDownIcon = ({
+  strokeWidth = 1.5,
+  ...otherProps
+}: IconSvgProps) => {
   return (
     <svg
       aria-hidden="true"
@@ -1049,12 +1057,15 @@ export const DefaultIcon = (props: IconSvgProps) => {
       width="24px"
       {...props}
     >
-      <path d="M0 426.667C0 191.025 191.025 0 426.667 0c235.641 0 426.666 191.025 426.666
+      <path
+        clipRule="evenodd"
+        d="M0 426.667C0 191.025 191.025 0 426.667 0c235.641 0 426.666 191.025 426.666
       426.667 0 235.641-191.025 426.666-426.666 426.666C191.025 853.333 0 662.308 0 426.667zm426.667
       320c-176.731 0-320-143.269-320-320s143.269-320 320-320 320 143.269 320 320-143.269 320-320 320zM0
       1920v-853.33h853.333V1920H0zm106.667-106.67v-640h640v640h-640zM1920 853.333 1440 0 960 853.333h960zm-182.38-106.666L1440
       217.571l-297.62 529.096h595.24zM1386.67 1920v-373.33h-373.34V1440h373.34v-373.33h106.66V1440h373.34v106.67h-373.34V1920h-106.66Z"
-      fillRule="evenodd" clipRule="evenodd"/>
+        fillRule="evenodd"
+      />
     </svg>
   );
 };
@@ -1071,14 +1082,22 @@ export const EyeViewIcon = (props: IconSvgProps) => {
       width="20px"
       {...props}
     >
-      <path fillRule="evenodd" clipRule="evenodd" d="M12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 
+      <path
+        clipRule="evenodd"
+        d="M12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 
       15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9ZM11 12C11 11.4477 11.4477 11 12 11C12.5523 11 
-      13 11.4477 13 12C13 12.5523 12.5523 13 12 13C11.4477 13 11 12.5523 11 12Z"/>
-      <path fillRule="evenodd" clipRule="evenodd" d="M21.83 11.2807C19.542 7.15186 15.8122 5 12 5C8.18777 
+      13 11.4477 13 12C13 12.5523 12.5523 13 12 13C11.4477 13 11 12.5523 11 12Z"
+        fillRule="evenodd"
+      />
+      <path
+        clipRule="evenodd"
+        d="M21.83 11.2807C19.542 7.15186 15.8122 5 12 5C8.18777 
       5 4.45796 7.15186 2.17003 11.2807C1.94637 11.6844 1.94361 12.1821 2.16029 12.5876C4.41183 16.8013 8.1628 
       19 12 19C15.8372 19 19.5882 16.8013 21.8397 12.5876C22.0564 12.1821 22.0536 11.6844 21.83 11.2807ZM12 
       17C9.06097 17 6.04052 15.3724 4.09173 11.9487C6.06862 8.59614 9.07319 7 12 7C14.9268 7 17.9314 8.59614 
-      19.9083 11.9487C17.9595 15.3724 14.939 17 12 17Z"/>
+      19.9083 11.9487C17.9595 15.3724 14.939 17 12 17Z"
+        fillRule="evenodd"
+      />
     </svg>
   );
 };
@@ -1095,12 +1114,16 @@ export const TimeIcon = (props: IconSvgProps) => {
       width="16px"
       {...props}
     >
-      <path d="M5.28249 5.28248C3.72835 6.83662 2.76118 8.88154 2.54575 11.0688C2.33032 13.2561 2.87996 15.4504 4.10104 17.2779C5.32211 19.1054 7.13906 20.4529 9.24229 21.0909C11.3455 21.7289 13.6049 21.6179 15.6355 20.7769C17.6661 19.9358 19.3422 18.4166 20.3783 16.4783C21.4143 14.5399 21.7462 12.3023 21.3175 10.1466C20.8887 7.991 19.7257 6.05072 18.0267 4.6564C16.3278 3.26208 14.1979 2.5 12 2.5" stroke="currentColor" strokeLinecap="round"/>
-      <path d="M12 12L7 7" stroke="currentColor" strokeLinecap="round"/>
-      <path d="M12 2.5V5" stroke="currentColor" strokeLinecap="round"/>
-      <path d="M21 12L19 12" stroke="currentColor" strokeLinecap="round"/>
-      <path d="M12 19V21" stroke="currentColor" strokeLinecap="round"/>
-      <path d="M5 12L3 12" stroke="currentColor" strokeLinecap="round"/>
+      <path
+        d="M5.28249 5.28248C3.72835 6.83662 2.76118 8.88154 2.54575 11.0688C2.33032 13.2561 2.87996 15.4504 4.10104 17.2779C5.32211 19.1054 7.13906 20.4529 9.24229 21.0909C11.3455 21.7289 13.6049 21.6179 15.6355 20.7769C17.6661 19.9358 19.3422 18.4166 20.3783 16.4783C21.4143 14.5399 21.7462 12.3023 21.3175 10.1466C20.8887 7.991 19.7257 6.05072 18.0267 4.6564C16.3278 3.26208 14.1979 2.5 12 2.5"
+        stroke="currentColor"
+        strokeLinecap="round"
+      />
+      <path d="M12 12L7 7" stroke="currentColor" strokeLinecap="round" />
+      <path d="M12 2.5V5" stroke="currentColor" strokeLinecap="round" />
+      <path d="M21 12L19 12" stroke="currentColor" strokeLinecap="round" />
+      <path d="M12 19V21" stroke="currentColor" strokeLinecap="round" />
+      <path d="M5 12L3 12" stroke="currentColor" strokeLinecap="round" />
     </svg>
   );
 };
@@ -1118,7 +1141,8 @@ export const HistoryIcon = (props: IconSvgProps) => {
       {...props}
     >
       <g>
-        <path d="M458.091,128.116v326.842c0,26.698-21.723,48.421-48.422,48.421h-220.92c-26.699,0-48.421-21.723-48.421-48.421V242.439
+        <path
+          d="M458.091,128.116v326.842c0,26.698-21.723,48.421-48.422,48.421h-220.92c-26.699,0-48.421-21.723-48.421-48.421V242.439
           c6.907,1.149,13.953,1.894,21.184,1.894c5.128,0,10.161-0.381,15.132-0.969v211.594c0,6.673,5.429,12.104,12.105,12.104h220.92
           c6.674,0,12.105-5.432,12.105-12.104V128.116c0-6.676-5.432-12.105-12.105-12.105H289.835c0-12.625-1.897-24.793-5.297-36.315
           h125.131C436.368,79.695,458.091,101.417,458.091,128.116z M159.49,228.401c-62.973,0-114.202-51.229-114.202-114.199
@@ -1131,7 +1155,8 @@ export const HistoryIcon = (props: IconSvgProps) => {
           C379.803,229.879,374.382,224.456,367.697,224.456z M367.91,297.885h-131.14c-6.682,0-12.105,5.42-12.105,12.105
           s5.423,12.105,12.105,12.105h131.14c6.685,0,12.104-5.42,12.104-12.105S374.601,297.885,367.91,297.885z M367.91,374.353h-131.14
           c-6.682,0-12.105,5.426-12.105,12.105c0,6.685,5.423,12.104,12.105,12.104h131.14c6.685,0,12.104-5.42,12.104-12.104
-          C380.015,379.778,374.601,374.353,367.91,374.353z"/>
+          C380.015,379.778,374.601,374.353,367.91,374.353z"
+        />
       </g>
     </svg>
   );
@@ -1149,8 +1174,37 @@ export const HomeIcon = (props: IconSvgProps) => {
       width="24px"
       {...props}
     >
-      <path fillRule="evenodd" clipRule="evenodd" d="M8 0L0 
-      6V8H1V15H4V10H7V15H15V8H16V6L14 4.5V1H11V2.25L8 0ZM9 10H12V13H9V10Z" fill="#000000"/>
+      <path
+        clipRule="evenodd"
+        d="M8 0L0 
+      6V8H1V15H4V10H7V15H15V8H16V6L14 4.5V1H11V2.25L8 0ZM9 10H12V13H9V10Z"
+        fill="#000000"
+        fillRule="evenodd"
+      />
+    </svg>
+  );
+};
+
+export const LogoutIcon = (props: IconSvgProps) => {
+  return (
+    <svg
+      aria-hidden="true"
+      fill="none"
+      focusable="false"
+      height="24px"
+      role="presentation"
+      viewBox="0 0 24 24"
+      width="24px"
+      {...props}
+    >
+      <path
+        d="M15 16.5V19C15 20.1046 14.1046 21 13 21H6C4.89543 21 4 20.1046 4 19V5C4 3.89543 4.89543 
+      3 6 3H13C14.1046 3 15 3.89543 15 5V8.0625M11 12H21M21 12L18.5 9.5M21 12L18.5 14.5"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
+      />
     </svg>
   );
 };

@@ -15,11 +15,12 @@ export const ThemeSwitch: FC<ThemeSwitchProps> = ({ className }) => {
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setMounted(true);
   }, []);
 
   if (!mounted) {
-    return <div className="w-[22px] h-[22px]" />;
+    return <div className="w-5.5 h-5.5" />;
   }
 
   const isLight = resolvedTheme === "light";
