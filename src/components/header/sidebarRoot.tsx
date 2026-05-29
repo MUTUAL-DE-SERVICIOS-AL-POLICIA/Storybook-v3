@@ -12,21 +12,16 @@ export const SidebarRoot = () => {
   const router = useRouter();
   const pathname = usePathname();
 
-  const menuItems = [
-    { label: "Inicio", href: "/", icon: HomeIcon },
-    // { label: "Otro", href: "/", icon: HomeIcon },
-  ];
+  const menuItems = [{ label: "Inicio", href: "/", icon: HomeIcon }];
 
   return (
     <aside
       className={`text-black transition-all duration-300 h-full border-r border-gray-200 dark:border-gray-700 flex flex-col ${
-        collapsed ? "w-14 items-center" : "w-60"
+        collapsed ? "w-14" : "w-60"
       }`}
     >
       <div
-        className={`flex flex-col gap-2 p-2 ${
-          collapsed ? "items-center" : ""
-        } overflow-y-auto grow max-h-full`}
+        className={`flex flex-col gap-2 p-2 overflow-y-auto grow max-h-full`}
         style={{ maxHeight: "calc(100vh - 80px)" }}
       >
         {menuItems.map(({ label, href, icon: Icon }) => {
@@ -36,18 +31,16 @@ export const SidebarRoot = () => {
             <Tooltip key={label} isDisabled={!collapsed}>
               <Tooltip.Trigger>
                 <Button
-                  className={`flex items-center py-2 overflow-hidden transition-all duration-300 ${
+                  className={`w-full flex items-center py-2 transition-all duration-300 ${
                     collapsed
-                      ? "justify-center px-0 max-w-full"
-                      : "justify-start gap-2 px-3 max-w-full"
+                      ? "justify-center px-0"
+                      : "justify-start gap-2 px-3"
                   } ${
                     isActive
-                      ? "bg-green-200 dark:bg-green-950 text-black dark:text-white"
-                      : "bg-transparent text-default-900 dark:text-default-100"
+                      ? "bg-green-200 dark:bg-green-950"
+                      : "bg-transparent"
                   }`}
-                  isIconOnly={collapsed}
-                  style={{ maxWidth: collapsed ? "3rem" : "15rem" }}
-                  variant={isActive ? "tertiary" : "ghost"}
+                  variant="ghost"
                   onPress={() => router.push(href)}
                 >
                   <Icon className="w-5 h-5 shrink-0" />
