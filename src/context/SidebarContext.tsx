@@ -7,16 +7,21 @@ interface SidebarContextProps {
   setSelectedKey: (key: string) => void;
 }
 
+interface SidebarProviderProps {
+  selectedKey?: string;
+  children: ReactNode;
+}
+
 const SidebarContext = createContext<SidebarContextProps | undefined>(
   undefined,
 );
 
 SidebarContext.displayName = "SidebarContext";
 
-export const SidebarProvider: React.FC<{
-  selectedKey?: string;
-  children: ReactNode;
-}> = ({ selectedKey = "", children }) => {
+export function SidebarProvider({
+  selectedKey = "",
+  children,
+}: SidebarProviderProps) {
   const [selectedKeyState, setSelectedKeyState] = useState(selectedKey);
 
   return (
@@ -29,7 +34,7 @@ export const SidebarProvider: React.FC<{
       {children}
     </SidebarContext.Provider>
   );
-};
+}
 
 export const useSidebar = () => {
   const context = useContext(SidebarContext);
