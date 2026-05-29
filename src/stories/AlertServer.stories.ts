@@ -1,24 +1,23 @@
 import type { Meta, StoryObj } from "@storybook/nextjs-vite";
 
-import { ButtonRegister } from "@/components";
+import { AlertServer } from "@/components";
 
 const meta = {
-  title: "ButtonRegister",
-  component: ButtonRegister,
+  title: "AlertServer",
+  component: AlertServer,
   parameters: {
     layout: "centered",
   },
   tags: ["autodocs"],
-} satisfies Meta<typeof ButtonRegister>;
+} satisfies Meta<typeof AlertServer>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Test: Story = {
   args: {
-    onPress: () => {},
-    isPending: false,
-    isDisabled: false,
-    isIconOnly: false,
+    color: "danger",
+    description: "Error al cargar los datos del servidor",
+    href: "/",
   },
 };

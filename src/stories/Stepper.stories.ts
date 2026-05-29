@@ -1,23 +1,19 @@
 import type { Meta, StoryObj } from "@storybook/nextjs-vite";
 
-import { ButtonEdition } from "@/components";
+import { Stepper } from "@/components";
 
 const meta = {
-  title: "ButtonEdition",
-  component: ButtonEdition,
+  title: "Stepper",
+  component: Stepper,
   parameters: {
     layout: "centered",
   },
   tags: ["autodocs"],
-} satisfies Meta<typeof ButtonEdition>;
+} satisfies Meta<typeof Stepper>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Test: Story = {
-  args: {
-    onPress: () => {},
-    isEdit: false,
-    isIconOnly: false,
-  },
+  args: {},
 };
