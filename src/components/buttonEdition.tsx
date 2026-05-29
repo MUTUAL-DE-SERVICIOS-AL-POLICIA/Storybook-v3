@@ -5,16 +5,22 @@ import { EditIcon, CancelIcon } from "@/components";
 interface Props {
   onPress?: () => void;
   isEdit?: boolean;
+  isIconOnly?: boolean;
 }
 
 export const ButtonEdition = ({
   onPress = () => {},
   isEdit = false,
+  isIconOnly = false,
 }: Props) => {
   return (
     <Tooltip delay={0}>
-      <Button variant={isEdit ? "danger" : "secondary"} onPress={onPress}>
-        {isEdit ? "CANCELAR" : "EDITAR"}
+      <Button
+        size="sm"
+        variant={isEdit ? "danger" : "secondary"}
+        onPress={onPress}
+      >
+        {isIconOnly ? null : isEdit ? "CANCELAR" : "EDITAR"}
         {isEdit ? <CancelIcon /> : <EditIcon />}
       </Button>
       <Tooltip.Content showArrow placement="right">
