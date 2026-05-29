@@ -36,6 +36,8 @@ export {
   VerticalDotsIcon,
   HomeIcon,
   LogoutIcon,
+  SalesIcon,
+  ArrowRightIcon,
 } from "./icons";
 
 export { ButtonEdit } from "./buttonEdit";
@@ -51,3 +53,10 @@ export { SpinnerLoading } from "./spinnerLoading";
 // export { TableActions } from "./tableActions";
 export { UserSession } from "./userSession";
 export { Search } from "./search";
+export { ThemeSwitch } from "./theme-switch";
+export { AlertServer } from "./alertServer";
+export { UserInfo } from "./userInfo";
+export { CopyButton } from "./copyButton";
+export { BreadcrumbsState } from "./breadcrumbsState";
+export { Sidebar } from "./sidebar";
+export { Stepper } from "./stepper";
