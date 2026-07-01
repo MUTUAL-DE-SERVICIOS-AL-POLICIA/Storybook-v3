@@ -10,3 +10,10 @@ export interface User {
   identityCard?: string;
   position?: string;
 }
+
+export interface Voucher {
+  customer: string;
+  identityCardCustomer: string;
+  paymentLocationId: string;
+  depositDate: string;
+}
