@@ -51,7 +51,7 @@ export const CardActions = ({
   return (
     <>
       <Card
-        className={`group border-small rounded-small border-default-200 dark:border-default-200 ${height} w-auto max-w-full`}
+        className={`group border-2 rounded-small border-default-200 dark:border-default-200 ${height} w-auto max-w-full`}
       >
         <Card.Header className="flex flex-col gap-2 relative">
           <div className="flex justify-between items-start flex-wrap gap-2">
@@ -63,9 +63,8 @@ export const CardActions = ({
               )}
             </div>
           </div>
-          <Card.Description>
-            {" "}
-            <p className={`${sizeTextBody}`}>{textBody}</p>
+          <Card.Description className={`${sizeTextBody} text-foreground/80`}>
+            {textBody}
           </Card.Description>
         </Card.Header>
         <Card.Footer className="flex justify-end">
