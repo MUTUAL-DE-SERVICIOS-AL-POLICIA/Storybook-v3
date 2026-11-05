@@ -39,6 +39,7 @@ export {
   SalesIcon,
   ArrowRightIcon,
   ArrowUpLargeIcon,
+  PrintIcon,
 } from "./icons";
 
 export { ButtonEdit } from "./buttonEdit";
@@ -63,3 +64,5 @@ export { Sidebar } from "./sidebar";
 export { Stepper } from "./stepper";
 export { ButtonCard } from "./buttonCard";
 export { PaymentType } from "./paymentType";
+export { ButtonPrint } from "./buttonPrint";
+export { ButtonCancel } from "./buttonCancel";
