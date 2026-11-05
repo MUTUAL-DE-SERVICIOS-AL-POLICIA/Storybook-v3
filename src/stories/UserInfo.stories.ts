@@ -19,7 +19,7 @@ export const Test: Story = {
     user: {
       fullName: "Juan Pérez",
       identityCard: "12345678",
-      nup: "2023-00001",
+      nup: "2023",
       kinship: "Hijo",
       state: true,
     },

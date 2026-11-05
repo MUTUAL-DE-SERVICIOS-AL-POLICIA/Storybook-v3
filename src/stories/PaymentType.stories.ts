@@ -25,6 +25,6 @@ export const Test: Story = {
       identityCardCustomer: "",
       paymentLocationId: "",
       depositDate: "",
-    }
+    },
   },
 };
