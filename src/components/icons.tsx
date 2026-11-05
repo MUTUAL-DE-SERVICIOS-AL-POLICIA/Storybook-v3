@@ -1297,3 +1297,27 @@ export const ArrowUpLargeIcon = (props: IconSvgProps) => {
     </svg>
   );
 };
+
+export const PrintIcon = (props: IconSvgProps) => {
+  return (
+    <svg
+      aria-hidden="true"
+      fill="currentColor"
+      focusable="false"
+      height={props.size || "24px"}
+      role="presentation"
+      viewBox="0 0 24 24"
+      width={props.size || "24px"}
+      {...props}
+    >
+      <g id="print">
+        <g>
+          <path d="M19,24H5v-4H0V6h5V0h14v6h5v14h-5V24z M7,22h10v-6H7V22z M19,18h3V8H2v10h3v-2H4v-2h16v2h-1V18z M7,6h10V2H7V6z" />
+        </g>
+        <g>
+          <rect height="2" width="2" x="18" y="10" />
+        </g>
+      </g>
+    </svg>
+  );
+};
